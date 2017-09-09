@@ -1,0 +1,151 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.file_system_thumbnail {
+width: auto;
+height: 100px;
+float: left;
+} .file_system_name {
+ text-overflow: ellipsis;
+ float: left;
+ clear: both;
+ font-size: 0.8em;
+ max-width: 70px;
+ overflow: hidden;
+ white-space: nowrap;
+} .file_selection::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 5px;
+  height: 10px;
+  padding: 2px;
+} .file_selection::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+} .file_selection::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+} .file_selection {
+ width: 100%;
+ height: auto;
+ display: inline-block;
+ text-align: left;
+ position: relative;
+ max-height: 500px;
+ overflow-y: scroll;
+ overflow-x: hidden;
+} .file_selection * {
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} .file_system_file {
+ display: inline-block;
+ position: relative;
+ width: auto;
+ margin: 2px;
+ float: left;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+} .file_system_hidden {
+ display: none;
+} .file_system_border {
+ overflow: hidden;
+ height: auto;
+ width: auto;
+ background-color: transparent;
+ position: relative;
+} .file_system_hidden:checked + .file_system_border:after {
+ content: "✓";
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ display: block;
+ text-align: center;
+ width: 45px;
+ height: 45px;
+ line-height: 52px;
+ border-radius: 25px;
+ background-color: rgba(255,255,255,1);
+ transform: translate(-50%, -50%);
+ font-size: 40px;
+ color: #27ae60;
+} .file_system_dir {
+ cursor: pointer;
+} .file_system_loader {
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-top: 10px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  display: none;
+  opacity: 0;
+} .file_system_buttons img, .file_system_buttons label {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float:right;
+  cursor: pointer;
+} .upload_input {
+  display: none;
+} .file_system_buttons {
+  width: 100%;
+  display: block;
+  clear: both;
+  overflow: hidden;
+} .file_system_buttons img {
+  opacity: 0.5;
+} .file_system_name input {
+  max-width: 70px !important;
+  padding: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  height: auto !important;
+  font-size: 0.8em !important;
+} .fs_create_folder_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+} .upload_info:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #ccc;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px dotted #ccc;
+  font-weight: 700;
+  background-color: white;
+  content: "drop your files here";
+} .fs_upload_progress {
+  width: 100%;
+  height: 0;
+  box-sizing: border-box;
+  background-color: #2ecc71;
+  margin: 0;
+  display: block;
+  float: left;
+} .fs_upload_remaining {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}

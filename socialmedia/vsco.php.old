@@ -1,0 +1,17 @@
+<!-- VSCO -->
+
+<div class='content_block' id='vsco'>
+  <!-- HEADER -->
+  <a target='_blank' href='http://vsco.co/santerinogelainen/grid/1'>
+  <div class='content_header'>
+    <img class='content_pic' src='/img/vsco/profile.jpg' />
+  </div>
+
+  <!-- USERNAME -->
+  <h3 class='content_name'>
+    <span class='cb_name'>
+    VSCO
+    </span>
+  </h3>
+</a>
+</div>

@@ -1,0 +1,31 @@
+<!-- SOUNDCLOUD -->
+
+<?php
+
+$param = array(
+  "client_id" => $keys["soundcloud"][0]
+);
+
+$content = $json->fromURL("http://api.soundcloud.com/users/124475820", $param);
+if ($content != false):
+?>
+
+<div class='content_block' id='soundcloud'>
+  <!-- HEADER -->
+  <a target='_blank' href='https://soundcloud.com/pinguu9999'>
+  <div class='content_header'>
+      <img class='content_pic' src='<?php echo $content->avatar_url; ?>' />
+  </div>
+
+  <!-- USERNAME -->
+
+    <h3 class='content_name'>
+      <span class='cb_name'>
+      SoundCloud
+      </span>
+    </h3>
+  </a>
+</div>
+<?php
+endif;
+?>

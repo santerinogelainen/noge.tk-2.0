@@ -1,0 +1,189 @@
+ .block_heading {
+  position: absolute;
+} .post_buttons {
+ height: auto;
+ overflow: hidden;
+ display: table;
+ width: 100%;
+} .post_edit {
+ font-family: "Courier New", Courier, monospace;
+ height: 30px;
+ width: 30px;
+ background-size: 28px 28px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-color: white;
+ border: 0;
+} .post_bold {
+ font-weight: bold;
+} .post_underline {
+ text-decoration: underline;
+} .post_overline {
+ text-decoration: line-through;
+} .post_italicize {
+ font-style: italic;
+} .post_visual_btn {
+ font-family: 'Yantramanav', sans-serif;
+ width: auto;
+ margin: 0;
+ float: right;
+ z-index: 50;
+} .post_html_btn {
+ width: auto;
+ margin: 0;
+ float: right;
+ z-index: 50;
+} .tag {
+ color: red;
+} .left {
+  display: table-cell;
+ width: 85%;
+ position: relative;
+ background-color: white;
+} .right {
+  display: table-cell;
+ width: 15%;
+ height: 100%;
+ overflow: hidden;
+ background-color: white;
+} .left * {
+ float: left;
+} .post_highlight {
+ background-color: red;
+ color: white;
+} .post_color, .post_remove_col, .post_remove_row {
+ color: red;
+} .post_color {
+  font-weight: bold;
+} .post_table, .post_add_col, .post_remove_col, .post_list {
+ line-height: 5px;
+ font-size: 10px;
+} .post_olist {
+  font-size: 10px;
+  line-height: 7px;
+} .post_text_center, .post_text_left, .post_text_right {
+  font-size: 9px;
+  line-height: 5px;
+  letter-spacing: -1px;
+  font-weight: bold;
+} .post_text_left {
+  text-align: left;
+} .post_text_right {
+  text-align: right;
+} .post_remove_row {
+  letter-spacing: -5px;
+  line-height: 7px;
+} .post_hide {
+  font-size: 8px;
+} select.post_edit {
+ width: auto;
+} .post_edit[type=button]:active {
+ background-color: rgba(220, 220, 220, 1);
+} .selected {
+  background-color: red;
+  color: white;
+} .post_edit_submit {
+ float: right;
+ font-size: 20px;
+ width: 100px;
+ height: 50px;
+ margin-top: 10px;
+ border: none;
+ color: white;
+ background-color: #2ecc71;
+} .post_edit_submit:active, .post_edit_submit:hover {
+ background-color: #27ae60;
+} .fixed_buttons {
+  position: fixed;
+  top: 0;
+  width: 70%;
+  z-index: 250;
+}
+
+ .comment {
+ color: white;
+} .choose_style label {
+ display: inline-block;
+ width: 150px;
+ height: 150px;
+} .choose_style label h3 {
+ text-align: center;
+ margin: 0;
+} .choose_style label img {
+ width: auto;
+ height: 125px;
+ position: relative;
+ left: 50%;
+ transform: translateX(-50%);
+} .warning {
+ color: red;
+} .default_styling table tr td {
+ border: 1px solid black;
+ width: 100px;
+ border-collapse: collapse;
+} .default_styling table {
+ border-collapse: collapse;
+} .add_image_link {
+ width: 15px;
+ height: 15px;
+ cursor: pointer;
+} .link_images input {
+ width: 100%;
+} .post_show {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 9999999;
+  font-size: 8px;
+  opacity: 0;
+  display: none;
+} table tr td:nth-child(1) {
+  color: black !important;
+} .page_title, .link_url, .link_text, .video_link {
+  width: 100%;
+} .save_block {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+} .save_block div {
+  padding: 10px;
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
+} .save_publish {
+  background-color: #2ecc71;
+} .save_draft {
+  background-color: #f1c40f;
+} .image_bg, .image_autoplay, .image_title {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .choose_style label {
+    width: 130px;
+    height: 130px;
+  } .choose_style label img {
+    height: 100px;
+  } .post_show {
+    width: 20px;
+    height: 20px;
+  } .post_edit {
+    width: 25px;
+    height: 25px;
+  } .post_visual_btn {
+    width: auto;
+  } .post_html_btn {
+    width: auto;
+  } .save_block div {
+    padding: 5px;
+    font-size: 12px;
+  } .fixed_buttons {
+    width: 95%;
+  }
+}
+
+
+*:focus {
+ outline: none;
+}

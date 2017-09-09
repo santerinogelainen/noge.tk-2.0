@@ -1,0 +1,36 @@
+<!-- LASTFM -->
+
+<?php
+
+$param = array(
+  "method" => "user.getinfo",
+  "user" => "pinguu9999",
+  "format" => "json",
+  "api_key" => $keys["lastfm"][0]
+);
+
+$content = $json->fromURL("http://ws.audioscrobbler.com/2.0/", $param);
+
+if ($content != false):
+
+?>
+
+<div class='content_block' id='last_fm'>
+  <!-- HEADER -->
+  <a target='_blank' href='http://www.last.fm/user/pinguu9999'>
+  <div class='content_header'>
+    <img class='content_pic' src='<?php echo $content->user->image[3]->{'#text'}; ?>' />
+  </div>
+
+  <!-- USERNAME -->
+
+    <h3 class='content_name'>
+      <span class="cb_name">
+      Last.fm
+      </span>
+    </h3>
+  </a>
+</div>
+<?php
+endif;
+?>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,700');
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+button:not(.post_edit) {
+  padding: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  box-sizing: border-box;
+} button:hover:not(.post_edit), button:active:not(.post_edit) {
+  background-color: #27ae60;
+}
+
+/* PAGE HEADER */
+.page_header {
+  width: auto;
+  height: 50px;
+  z-index: 251;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+} .page_header img {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom-right-radius: 10px;
+}
+
+.toast {
+ position: fixed;
+ bottom: 75px;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: black;
+ color: white;
+ font-size: 16px;
+ display: inline-block;
+ padding: 5px 10px 5px 10px;
+ text-align: center;
+ line-height: 20px;
+ max-width: 250px;
+ min-height: 20px;
+ word-break: break-all;
+ opacity: 0;
+ z-index: 5000;
+} .toast a {
+    color: white !important;  
+} .noscroll {
+ overflow: hidden !important;
+ height: 100%;
+} .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+} .login-input {
+ width: 198px;
+ padding: 6px;
+ border: 1px solid white;
+ color: white;
+ background-color: #000;
+} #login-button {
+ margin-top: 15px;
+ width: 212px;
+ cursor: pointer;
+ background-color: white;
+ font-weight: 700;
+ color: black;
+} #login-button:hover {
+ background-color: rgba(255, 255, 255, 0.5);
+} #login-form {
+ padding: 5px 20px 20px 20px;
+ margin: 20px 2% 0 20px;
+ background-color: black;
+ border: 1px solid rgba(255, 255, 255, 0.4);
+ border-bottom: none !important;
+ position: fixed;
+ bottom: -250px;
+ right: 0;
+} #login-close {
+ width: 25px;
+ height: 25px;
+ float: right;
+ position: relative;
+ top: -18px;
+ right: -32px;
+ cursor: pointer;
+} #email.login-input {
+ margin-bottom: 5px;
+} .login-lock {
+ width: 30px;
+ height: 30px;
+ right: 20px;
+ float: right;
+ position: absolute;
+ bottom: 12px;
+} #loggedin {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ margin: 0;
+} footer {
+ width: 100%;
+ height: 50px;
+ background-color: black;
+ margin: 0;
+ padding: 0;
+ position: relative;
+} footer>div {
+ text-align: center;
+ font-size: 0.7em;
+ line-height: 50px;
+ margin: 0;
+ width: 100%;
+} .footer_link {
+ text-decoration: underline;
+ cursor: pointer;
+ margin-left: 20px;
+}
+
+/* COOKIES and CONTACT */
+
+.cookie_more {
+  cursor: pointer;
+} .cookie_more:hover {
+  text-decoration: underline;
+} .cookie_close, .contact_close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 20px;
+} .cookie_window, .contact_window {
+  display: none;
+  position: fixed;
+  width: 300px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999999;
+} .cookie_notice {
+  position: fixed;
+  bottom: -500px;
+  left: 0;
+  margin: 0;
+  padding: 10px 10px 10px 20px;
+  font-size: 1em;
+  line-height: 40px;
+  border-top-right-radius: 20px;
+  z-index: 200;
+} .cookie_button {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 0 0 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+} .cookie_long_agree {
+  margin: 10px;
+  background-color: green !important;
+  color: white !important;
+  float: left;
+} .cookie_long_disagree {
+  margin: 10px;
+  background-color: red !important;
+  color: white !important;
+  float: right;
+} .cookie_long, .contact_text {
+  width: 280px;
+  height: 300px;
+  overflow-y: scroll;
+  margin: 10px;
+} .footer_link {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 20px;
+} .footer_small {
+  width: auto;
+  display: inline-block;
+  line-height: normal;
+  height: auto;
+} .contact_window a {
+  text-decoration: none;
+} .contact_window a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 750px) {
+   .cookie_window, .contact_window {
+   width: 100%;
+   height: 100%;
+   padding-top: 100px;
+ } .cookie_close, .contact_close {
+   top: 100px;
+   right: 10px;
+ } .cookie_long, .contact_text {
+   width: 98%;
+   height: 80%;
+ } .footer_link {
+   margin-left: 0;
+   line-height: 1em;
+   width: auto;
+ } .footer_link:nth-child(n+2) {
+   margin-left: 10px;
+ } .footer_small {
+   width: 100%;
+ } footer>div {
+    line-height: 20px;
+  }
+ }
+
+ /* PSEUDO SCROLLBAR BS */
+
+ ::-webkit-scrollbar {
+   background-color: rgba(0, 0, 0, 0);
+   width: 10px;
+   height: 10px;
+   padding: 2px;
+ } ::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 0;
+ } ::-webkit-scrollbar-thumb:horizontal {
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 0;
+ }

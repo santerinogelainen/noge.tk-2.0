@@ -1,0 +1,134 @@
+ 
+ @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+ 
+ .post_settings_btn {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 200;
+} .addbutton {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 200;
+} .section_desc:empty:before {
+  content: "Description (optional)";
+  display: block;
+  color: gray;
+} .new_section {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 50px;
+} .remove_section {
+  width: 25px;
+  height: 25px;
+  margin: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+} .window_section select {
+  width: 100%;
+  font-size: 28px;
+  border: 1px solid #eee;
+} .save_block {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 299;
+} .save_block div {
+  padding: 10px;
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
+} .save_publish {
+  background-color: #2ecc71;
+} .save_draft {
+  background-color: #f1c40f;
+}
+
+/* ADD MENU */
+
+.add_hide {
+  display: none;
+} .add_hide input[type=text] {
+  background-color: white;
+  border: 1px dotted #ccc;
+  padding: 0;
+  height: 33px;
+  font-size: 1.1em;
+  width: 100%;
+} .add_href {
+  width: 70% !important;
+  padding-left: 5px !important;
+} .add_key input[type=text] {
+  background-color: transparent;
+  height: auto;
+  font-size: inherit;
+  border: none;
+} .add_description {
+  background-color: white;
+  border: 1px dotted #ccc;
+  width: 100%;
+  height: 75px;
+} .add_url input[type=text] {
+  margin-bottom: 20px;
+} .add_key {
+    display: none;
+} .add_post_table {
+  width: 100%;
+} .add_post_table td, .add_post_table th {
+  border-bottom: 1px solid #ccc;
+}
+
+/*CONTENT*/
+.remove_content {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 2px;
+  cursor: pointer;
+} .content_loader {
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-top: 10px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  margin: 70px;
+}
+
+@media only screen and (max-width: 750px) {
+  .new_section {
+   margin-left: 20px;
+ } .remove_section {
+   margin: 20px;
+ } .save_block div {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+*:focus {
+ outline: none;
+}

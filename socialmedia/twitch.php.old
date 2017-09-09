@@ -1,0 +1,31 @@
+<!-- TWITCH -->
+
+<?php
+$param = array(
+  "client_id" => $keys["twitch"][0]
+);
+
+$content = $json->fromURL("https://api.twitch.tv/kraken/users/lizardsn", $param);
+if ($content != false):
+
+?>
+
+<div class='content_block' id='twitch'>
+  <img src='svg/twitch_white.svg' class='cb_info_button' title='<?php echo $json->data->essentials->block_card_info_title; ?>' />
+  <!-- HEADER -->
+  <a target='_blank' href='https://www.twitch.tv/lizardsn/profile'>
+  <div class='content_header'>
+    <img class='content_pic' src='<?php echo $content->logo; ?>' />
+  </div>
+
+  <!-- USERNAME -->
+    <h3 class='content_name'>
+      <span class='cb_name'>
+      Twitch
+      </span>
+    </h3>
+  </a>
+</div>
+<?php
+endif;
+?>

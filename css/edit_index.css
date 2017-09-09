@@ -1,0 +1,47 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+} .add_buttons, .register {
+  width: 50%;
+} .add_buttons button {
+  width: 33%;
+  float: left;
+} .edit_form input[type=text], .edit_form input[type=password] {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  background-color: black;
+  border: 1px dotted white;
+  padding: 10px;
+  color: white;
+} .edit_form input[type=button] {
+  width: 100%;
+} .edit_form input[type=button], .edit_form input[type=submit] {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+} .edit_form input[type=button]:active, .edit_form input[type=button]:hover, .edit_form input[type=submit]:active, .edit_form input[type=submit]:hover {
+  background-color: #2980b9;
+} .open_req {
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+} .open_req:hover {
+  color: #2ecc71;
+} .requirements {
+  height: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 750px) {
+  .add_buttons, .register {
+   width: 95%;
+ }
+}

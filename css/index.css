@@ -1,0 +1,727 @@
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+ body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: 'Yantramanav', sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} .loader {
+  border: 16px solid transparent;
+  border-top: 16px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+} .loader_img {
+  display: none;
+  width: 200px;
+  height: 200px;
+} #page_loading {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} header {
+  height: 50px;
+  width: 70%;
+  background-color: #000;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  padding: 0 15% 0 15%;
+} #logo {
+  width: 60px;
+  height: 60px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(0, 0, 0, 1);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: inline-block;
+  left: 0;
+} #header-links {
+  display: table;
+  margin: 0 0 0 0;
+  padding: 0;
+  border-spacing: 25px 0;
+  float: right;
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+} .hl {
+  list-style-type: none;
+  margin: 0 15px 0 15px;
+  padding: 3px 7px;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+} .hl a {
+  color: #fff;
+  text-decoration: none;
+} .hl a:visited {
+  color: #fff;
+  text-decoration: none;
+} .hl a:hover {
+  color: #fff;
+  text-decoration: none;
+} .hl a:active {
+  color: #fff;
+  text-decoration: none;
+} .hl a:link {
+  color: #fff;
+  text-decoration: none;
+} h1 {
+  text-align: center;
+  font-size: 4em;
+  padding: 2px 20px 0 20px;
+  white-space: nowrap;
+  font-weight: 400;
+  margin-bottom: 0;
+} h1 span {
+  font-weight: 100;
+} .block {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+} #hamburger {
+  width: 50px;
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  height: auto;
+  padding: 25px;
+  float: right;
+  cursor: pointer;
+} .block2 {
+  min-height: 100vh;
+  width: 70%;
+  padding: 0 15% 0 15%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+} h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+  padding: 50px 0 20px 0;
+  width: 100%;
+} #desc {
+  float: left;
+  width: 50%;
+  height: auto;
+} #profile_pic {
+  float: right;
+  width: 50%;
+  height: auto;
+} h3 {
+  font-size: 1.5em;
+} #profile_pic img {
+  width: 80%;
+  margin: 50px 10% 0 10%;
+  height: auto;
+} #profile_pic h3 {
+  text-align: center;
+} #bio {
+  width: 80%;
+  margin: 50px 10% 0 10%;
+} #website {
+  width: 80%;
+  margin: 50px 10% 50px 10%;
+} .button {
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+} .button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+} .hide {
+  display: block;
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} .hide * {
+  height: 0 !important;
+  overflow: hidden;
+} .hide tr td:first-child {
+  width: 20%;
+} #hamburger-menu {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: white;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  display: none;
+} #hamburger-menu ul div .hl {
+  display: block;
+  padding: 2px 0;
+  margin: 0;
+  color: #000;
+} #hamburger-menu ul div .hl a {
+  color: #000;
+} #header-links-hm {
+  margin: 0;
+  padding: 0;
+} .login-input {
+  width: 198px;
+  padding: 6px;
+  border: 1px solid white;
+  color: white;
+  background-color: #000;
+} #login-button {
+  margin-top: 15px;
+  width: 212px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: 700;
+  color: black;
+} #login-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+} #login-form {
+  padding: 5px 20px 20px 20px;
+  margin: 20px 2% 0 20px;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: none !important;
+  position: fixed;
+  bottom: -250px;
+  right: 0;
+} #login-close {
+  width: 25px;
+  height: 25px;
+  float: right;
+  position: relative;
+  top: -18px;
+  right: -32px;
+  cursor: pointer;
+} .login-lock {
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  float: right;
+  position: absolute;
+  bottom: 12px;
+} #loggedin {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+} footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+} footer>div {
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 50px;
+  margin: 0;
+  width: 100%;
+} #locked {
+  cursor: pointer;
+} .error {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+} #bio table tr td:first-child, #website table tr td:first-child {
+  color: lightblue;
+}
+
+
+/* CONTENT */
+
+.content_block {
+  position: relative;
+  margin: 20px;
+  align-self: flex-start;
+  flex: 1 1 200px;
+  max-width: 200px;
+} .sm_content .content_block {
+  opacity: 0;
+} .content_block a {
+ color: white;
+ text-decoration: none;
+} .content_pic {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+} .content_name {
+  display: block;
+  box-sizing: border-box;
+  clear: left;
+  float: left;
+  background-color: inherit;
+  font-size: 1.2em;
+  color: inherit;
+  font-weight: 400;
+  max-width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+} .content {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 960px;
+  margin: 10px auto 40px auto;
+} .cb_info_button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px;
+  cursor: pointer;
+  background-size: contain;
+  opacity: 0.7;
+} .block_hr {
+  width: 200px;
+  border-color: rgba(255, 255, 255, 0.5);
+} .block_info {
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 15% 0 15%;
+  color: rgba(255, 255, 255, 0.7);
+} .setting_name {
+  color: blue;
+} .settings_remove_css {
+  width: 30px;
+  color: red;
+  cursor: pointer;
+  text-align: center;
+} .settings_add_css {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: green;
+  cursor: pointer;
+} .settings_remove_css_all {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: red;
+  cursor: pointer;
+} .settings_new_css {
+  display: block;
+  background-color: #eee;
+  padding: 5px;
+  margin-top: 10px;
+} .settings_new_css:hover {
+  background-color: #ccc;
+} .setting_input {
+  width: 100%;
+  border: 1px dotted #ccc;
+} .setting_name_input {
+  width: 80%;
+  color: blue;
+  border: 1px dotted #ccc;
+} .settings_css {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+} .css_selector_input {
+  font-size: 1em;
+  font-weight: 700;
+  border: 1px dotted #ccc;
+} .settings_css > * {
+  display: table-cell;
+} .hidden_input {
+  display: none;
+} .essential_settings {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px dotted #ccc;
+} .content .loader {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+} .content > .editbutton {
+  display: none;
+} .cb_info_desc {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+} .cb_info_desc h3 {
+  max-width: 160px;
+  word-break: break-all;
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 0;
+} .scroll_initiative {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px 0 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+} .cb_edit {
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+} .cb_info_desc::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 5px;
+  height: 10px;
+  padding: 2px;
+} .cb_info_desc::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+} .cb_info_desc::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+} .cb_info_img img {
+  width: 99px;
+  height: 99px;
+  float: left;
+} .cb_info_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} .cb_info_no_scroll {
+  overflow: hidden;
+  padding: 0;
+} .cb_info_no_scroll .cb_black {
+  top: 0;
+  right: 0;
+} .osu_country_rank img {
+  height: 10px;
+  display: inline-block;
+  margin-left: 10px;
+} .osu_rank {
+  font-size: 40px;
+  color: #ccc;
+} .osu_country_rank {
+  font-size: 20px;
+  color: #ccc;
+}
+
+
+/* EDIT */
+
+
+.editmenu_title {
+  width: 100%;
+  height: 50px;
+  font-size: 2em;
+  margin: 15px 0 15px 0;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  border: 1px dotted #ccc;
+} h5 {
+  height: auto;
+  padding: 0 20px 0 0;
+  margin: 5px 0 5px 0;
+  font-size: 1.2em;
+  text-align: left;
+} .close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+} .editbutton {
+  background-color: black;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+} .addbutton {
+  background-color: black;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+} .editmenu_text {
+  display: inline-block;
+  margin: 5px;
+} .editmenu_textarea {
+  border-radius: 5px;
+  resize: vertical;
+  height: 50px;
+  width: 175px;
+  padding: 5px;
+  border: 1px dotted #ccc;
+} .editmenu_table img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+} .editmenu_table textarea {
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  float: left;
+  resize: vertical;
+  background-color: transparent;
+} .editmenu_table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+} .editmenu_table td {
+  border: 1px dotted #ccc;
+  padding: 0;
+  margin: 0;
+} .editmenu_table_remove {
+  color: red;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-align: center;
+} .add_col {
+  float: right;
+} .editmenu_order input {
+  display: none;
+} .editmenu_order_item {
+  cursor: move;
+  background-color: #eee;
+  padding: 5px;
+  margin-bottom: 5px;
+} .editmenu_remove, .editmenu_toggle_sm {
+  display: block;
+  cursor: pointer;
+  font-size: 0.8em;
+} .editmenu_remove {
+  color: red;
+}
+
+/* ADD MENU */
+
+.add_hide {
+  display: none;
+} .add_hide input[type=text] {
+  background-color: white;
+  border: 1px dotted #ccc;
+  padding: 0;
+  height: 33px;
+  font-size: 1.1em;
+  width: 100%;
+} .add_href {
+  width: 70% !important;
+  padding-left: 5px !important;
+} .add_key input[type=text] {
+  background-color: transparent;
+  height: auto;
+  font-size: inherit;
+  border: none;
+} .add_description {
+  background-color: white;
+  border: 1px dotted #ccc;
+  width: 100%;
+  height: 75px;
+} .add_url input[type=text] {
+  margin-bottom: 20px;
+} .add_post_table {
+  width: 100%;
+} .add_post_table td, .add_post_table th {
+  border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 1150px) {
+  header {
+    width: 100%;
+    padding: 0;
+  } #logo {
+    border-bottom-left-radius: 0;
+  } .block_info {
+    width: 80%;
+    margin: 40px 10% 0 10%;
+  } .cookie_notice {
+    border-top-right-radius: 0;
+  } .block {
+    justify-content: center !important;
+  } .block h1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #header-links {
+    display: none;
+  } #hamburger {
+    position: fixed;
+    right: 0;
+    display: inline-block;
+    width: 30px;
+    padding: 10px;
+  } h1 span {
+    display: none;
+  } #desc {
+    float: none;
+    width: 96%;
+    margin: 2%;
+  } #profile_pic {
+    float: none;
+    width: 96%;
+    margin: 2%;
+  } h1 {
+    font-size: 2.5em;
+  } header {
+    position: relative;
+    height: 50px;
+  } #logo {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  } .block_info {
+    width: 90%;
+    margin: 30px 5% 0 5%;
+  } .cookie_window, .contact_window {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+  } .cookie_close, .contact_close {
+    top: 100px;
+    right: 10px;
+  } .cookie_long, .contact_text {
+    width: 98%;
+    height: 80%;
+  } .footer_link {
+    margin-left: 0;
+    line-height: 1em;
+    width: auto;
+  } .footer_link:nth-child(n+2) {
+    margin-left: 10px;
+  } .footer_small {
+    width: 100%;
+  } .block2 {
+    width: 90%;
+    padding: 0 5% 0 5%;
+  } footer>div {
+    line-height: 20px;
+  } .scroll_initiative {
+    width: 30px;
+  } .editbutton {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+  } p {
+    font-size: 1em;
+  } .sm_content .content_block {
+    margin-bottom: 40px;
+  } .front_page {
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 751px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+  .content {
+    width: 720px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .content {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .content {
+    width: 240px;
+  }
+}
+
+/* PSEUDO */
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+} ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+} ::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+}
